@@ -1,0 +1,58 @@
+.watch {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin: 0 auto; }
+  .watch__minute-arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    height: 180px;
+    width: 10px;
+    background-color: #c45b5a;
+    border-radius: 5px;
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+    -webkit-animation: rotation 3600s linear infinite forwards;
+            animation: rotation 3600s linear infinite forwards; }
+  .watch__second-arrow {
+    position: absolute;
+    left: calc(50% + 3px);
+    bottom: 50%;
+    height: 230px;
+    width: 5px;
+    background-color: #5599ac;
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+    -webkit-animation: rotation 60s linear infinite forwards;
+            animation: rotation 60s linear infinite forwards; }
+  .watch__point {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    -webkit-transform: translate(calc(-50% + 5px), 50%);
+            transform: translate(calc(-50% + 5px), 50%);
+    height: 20px;
+    width: 20px;
+    background-color: #5599ac;
+    border-radius: 50%; }
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+/*# sourceMappingURL=main.css.map */
